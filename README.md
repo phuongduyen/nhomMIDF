@@ -9,7 +9,7 @@
 
 
 #Link tham khảo: leerit.com
-#Công cụ sử dụng:
+## Công cụ sử dụng:
 	+Bootstrap
 	+JavaScript
 	+HTML & CSS
