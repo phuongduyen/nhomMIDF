@@ -9,6 +9,10 @@
 
 
 #Link tham khảo: leerit.com
+#Công cụ sử dụng:
+	+Bootstrap
+	+JavaScript
+	+HTML & CSS
 
 #Các thành viên:
 ## Bùi Thi Dung K60-CB
