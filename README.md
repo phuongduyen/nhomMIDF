@@ -13,6 +13,7 @@
 	+Bootstrap
 	+JavaScript
 	+HTML & CSS
+	+AngularJS
 ## Usecase: https://github.com/ThanhHuyen25/nhomMIDF/blob/master/usecase.jpg
 
 ## Các thành viên:
