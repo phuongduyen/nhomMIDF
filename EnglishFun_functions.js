@@ -38,7 +38,7 @@ function render(){
 	document.getElementById("b").value = choices[count][1];
 	document.getElementById("c").value = choices[count][2];
 	document.getElementById("d").value = choices[count][3];
-	document.getElementById("cauthu").innerHTML = count + 1 + "/15";
+	document.getElementById("cauthu").innerHTML = count + 1 + "/" + questions.length;
 }
 
 function submitAnswer(){
