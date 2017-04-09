@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>1</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+     <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="EnglishFun_config.js"></script>
+	<script src="EnglishFun_functions.js"></script>
+  </head>
+
+  <body style="background-color : #C6E2FF;">
+
+    <div class="container-fluid" ng-app="myapp">
+	<div class="row" style = "background-color: #4682B4; border: none">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<div class="page-header" style="color: white">
+				<h1>
+					EnglishFun
+				</h1>
+			</div>
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			
+		</div>
+	</div>
+	<div class="row" style="border-top:2px solid white">
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<img alt="hình ảnh bộ từ vựng" src="http://i.imgur.com/hJxDOmR.jpg"> <a href="#" class="btn" type="button">Bộ Từ Vựng</a>
+		</div>
+		<!-- <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+			
+		</div> -->
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<img alt="hình ảnh trắc nghiệm thông minh" src="http://i.imgur.com/Jhh6hMa.jpg"> <a href="#" class="btn" type="button">Trắc Nghiệm Thông Minh</a>
+			
+		</div>
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			
+		</div>
+	</div>
+	<div class="row" style=" border-top:2px solid white;">
+		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+			
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+						Các nhóm từ
+				</div>
+				<div class="panel-body">
+					Đang học : Ăn uống 
+				</div>
+				<div class="panel-body">
+					Tiếp theo:
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style=" background-color: #FFFFFF;">
+
+
+
+
+			<h3 class="text-center" id="cauthu" ></h3>
+			<div class="row">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					
+				</div>
+				<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+
+					<h4 id="h-typeOfQuestions"></h4>//----------------
+					<img id="anh" src="" alt="" >
+
+				</div>
+			</div>
+			<h3 id="h-questions" class="text-center"></h3>
+
+
+
+			<br>
+			<br>
+			<br>
+			
+			<br>
+			<div class="row">
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					
+				</div>
+				<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+					<p id="demo"></p>
+					<input type="radio" id="a" name="gender" value="drink" onclick="submitAnswer()"  ">
+					<label for="" id="0"></label>
+					<br> 
+					<br>
+					<input type="radio" id="b" name="gender" value="drinks"  onclick="submitAnswer()">
+					<label for="" id="1"></label>
+					<br> 
+					<br>
+					<input type="radio" id="c" name="gender" value="eat"     onclick="submitAnswer()"> 
+					<label for="" id="2"></label>   
+					<br> 
+					<br>
+					<input type="radio" id="d" name="gender" value="eats"    onclick="submitAnswer()">
+					<label for="" id="3"></label>
+					<br> 
+					<br>
+					<br>
+					<button type="button" class="btn btn-success" onclick="render()"> Next </button>
+					<br>
+					<br>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Điểm của bạn
+				</div>
+				<div id="diem" class="panel-body">
+					0
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+			
+		</div>
+	</div>
+	<div class="row">
+		<footer class="text-center">
+			@MIDF
+		</footer>
+	</div>
+	</div>
+	<script>
+  	render();
+  </script>
+  </body>
+</html>

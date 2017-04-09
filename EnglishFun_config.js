@@ -31,3 +31,25 @@ choices[2][2] = "meat";
 choices[2][3] = "egg";
 answers[2] = choices[2][0];
 
+
+// phan bo tu vung --------------------------------
+
+var voca = new Array(); // tu vung
+var image = new Array(); // hinh anh
+var pronounce = new Array();// phat am + nghia
+var example = new Array(); // vi du
+ 
+voca[0] = "Noodle";
+image[0] = "http://i.imgur.com/UKBy5GZ.jpg";
+pronounce[0] =  '[nu:dl] | (noun) <br> (số nhiều) mì sợi' ;
+example[0] = "Instant noodles. <br> We have rice noodle soup with beef. <br> Chinese food is often served with rice or noodles."
+
+voca[1] = "Milk";
+image[1] = "http://www.legendairy.com.au/~/media/legendairy/images/lhp/milk-carton-thumbnail.jpg?h=600&la=en&w=600";
+pronounce[1] =  '[milk] | (noun) | [uncountable] <br> Sữa' ;
+example[1] = "the cows are milking well this season (mùa này bò cho nhiều sữa). <br> milk fresh from the cow (sữa bò tươi)"; // cac loai tu loai
+
+voca[2] = "Cake";
+image[2] = "http://imgur.com/a/TJqZR";
+pronounce[2] =  '[keik] | (noun) <br> bánh';
+example[2] = "chocolate cake ( bánh socola)<br>cake of soap (một bánh xà phòng)<br>cake of tobacco (một bánh thuốc lá)"; // cac loai tu loai
