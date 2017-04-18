@@ -3,18 +3,11 @@ Feature: Học từ theo bộ
 	As 1 người dùng
 	I want to học từ mới theo các bộ
 
-	Scenario: học từ
-		Given người dùng đang truy cập bộ từ vựng
-		When người dùng click một bộ từ
-		Then từ mới hiện ra
-		When người dùng click loa
-		Then người dùng nghe thấy cách phát âm của từ
+	Background:
+		Given Tôi đang ở "Học từ theo bộ"
+		And Màn hình hiển thị từ Noodle
+		And Màn hình hiển thị "<tranh mì sợi>; cách phát âm ['nu:dl']; nghĩa : mì sợi; ví dụ: "I had breakfast with instance noodle."
+		
+	Scenario: Học từ
 		When người dùng click next
 		Then từ mới tiếp theo hiện ra
-
-		Examples:
-		<tranh bánh mì>
-		|từ mới   |           bread|
-		|nghĩa    |         bánh mì|
-		|cách đọc |          /bred/|
-		|ví dụ    | She has a bread|

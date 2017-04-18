@@ -1,36 +1,24 @@
-Feature: Kiểm tra trắc nghiệm
+Feature: Kiểm tra dạng bài "Chọn từ còn thiếu"
 	In order to kiểm tra từ vựng đã học
 	As 1 người dùng
 	I want to làm bài kiểm tra
-	
-	Scenario: chọn đáp án sai
-		Given Tôi đang truy cập kiểm tra trắc nghiệm thông minh
-		When Tôi click vào đáp án a 
-		Then Tôi nhận kết quả sai
-		And Tôi nhận được đáp án đúng
+
+	Background:
+		Given Tôi đang ở "Chọn từ còn thiếu"
+		And Màn hình hiển thị câu hỏi "She__rice and meat"
+		And Màn hình hiển thị 4 đáp án lựa chọn "drink, drinks, eat, eats"
+		
+	Scenario: Tôi chọn đúng
+		When Tôi click vào đáp án "eats"
+		Then Màn hình hiện thông báo "Đúng rồi!"
+		And Tôi được cộng 1 điểm
 		When Tôi click Next
 		Then Tôi sẽ nhìn thấy câu hỏi tiếp theo
 
-	Scenario: chọn đáp án đúng
-		Given Tôi đang truy cập kiểm tra trắc nghiệm thông minh
-		When Tôi click vào đáp án d
-		Then Tôi nhận kết quả đúng
-		And điểm của tôi sẽ tăng 1 đv
+	Scenario: Tôi chọn sai
+		When Tôi click vào 1 trong 3 đáp án"drink, drinks, eat"
+		Then Màn hình thông báo" Sai rồi! Đáp án đúng là eats"
+		And điểm của tôi sẽ không được cộng
 		When Tôi click Next
 		Then Tôi sẽ nhìn thấy câu hỏi tiếp theo
-
-	Scenario Outline: chọn từ còn thiếu
-		Given Tôi đang truy cập kiểm tra trắc nghiệm thông minh
-		When Tôi click <answer>
-		Then Tôi nhận <result>
-		When Tôi click Next
-		Then Tôi sẽ nhìn thấy câu hỏi tiếp theo
-
-		Examples:
-		She___rice and meat
-		| answer | result |
-		|a. drink|    sai |
-		|b. walk |    sai |
-		|c. eat  |    sai |
-		|d. eats |   đúng |
 
