@@ -51,7 +51,7 @@ function submitAnswer(){
 		} else {
 			useranswers[i].disabled = true;
 		}
-	}
+	} 
 		//kiem tra ket qua cua cau tr loi
 		if(c == answers[count]){
 			console.log("helpp");
@@ -70,17 +70,59 @@ function submitAnswer(){
 		}
 }
 
+//=====================================================================================
 
 var count1 =0;
+var btv = 0;
+
 function render1(){
-	if(count1 == (voca.length)){
-		document.getElementById("end").innerHTML = "Bạn đã học xong bộ từ vựng";
+	if(count1 == (voca[btv].length)){
+		document.getElementById("end").innerHTML = "Chúc mừng bạn đã học xong bộ từ vựng này";
 		document.getElementById("end").style.color = "green";
 		return true;
 	}
-	document.getElementById("image").src = image[count1];
-	document.getElementById("voca").innerHTML = voca[count1];
-	document.getElementById("pronounce").innerHTML = pronounce[count1];
-	document.getElementById("example").innerHTML = example[count1];
+	document.getElementById("voca").innerHTML = voca[btv][count1];
+	document.getElementById("image").src = image[btv][count1];
+	document.getElementById("pronounce").innerHTML = pronounce[btv][count1];
+
+	document.getElementById("example0").innerHTML = example[btv][count1][0];
+	document.getElementById("trans0").innerHTML = trans[btv][count1][0];
+	document.getElementById("example1").innerHTML = example[btv][count1][1];
+	document.getElementById("trans1").innerHTML = trans[btv][count1][1];
+	document.getElementById("example2").innerHTML = example[btv][count1][2];
+	document.getElementById("trans2").innerHTML = trans[btv][count1][2];
+
 	count1++;
+}
+
+function btv0(){
+	document.getElementById("end").innerHTML = "";
+	document.getElementById("end").style.color = "";
+	count1 = 0;
+	btv = 0;
+	render1();
+}
+
+function btv1(){
+	document.getElementById("end").innerHTML = "";
+	document.getElementById("end").style.color = "";
+	count1 = 0;
+	btv = 1;
+	render1();
+}
+
+function btv2(){
+	document.getElementById("end").innerHTML = "";
+	document.getElementById("end").style.color = "";
+	count1 = 0;
+	btv = 2;
+	render1();
+}
+
+function btv3(){
+	document.getElementById("end").innerHTML = "";
+	document.getElementById("end").style.color = "";
+	count1 = 0;
+	btv = 3;
+	render1();
 }

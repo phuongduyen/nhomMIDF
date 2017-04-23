@@ -19,6 +19,7 @@
   <script src="EnglishFun_config.js"></script>
 	<script src="EnglishFun_functions.js"></script>
   </head>
+
   <body style="background-color : #C6E2FF;">
 
     <div class="container-fluid" ng-app="myapp">
@@ -60,7 +61,7 @@
 			
 		</div>
 		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-			<img alt="hình ảnh trắc nghiệm thông minh" src="http://i.imgur.com/Jhh6hMa.jpg"> <a href="englishfun.html" class="btn" type="button">Trắc Nghiệm Thông Minh</a>
+			<img alt="hình ảnh trắc nghiệm thông minh" src="http://i.imgur.com/Jhh6hMa.jpg"> <a href="#" class="btn" type="button">Trắc Nghiệm Thông Minh</a>
 			
 		</div>
 		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
@@ -80,16 +81,10 @@
 	            <div class="col-md-1">
 	            </div>
 				<div class="col-md-11">
-					<a href="">Animal</a> <br> <br>
-					<a href="">Family</a> <br> <br>
-					<a href="">Food</a> <br> <br>
-					<a href="">Friends</a> <br> <br>
-					<a href="">Future</a> <br> <br>
-					<a href="">Game</a> <br> <br>
-					<a href="">Nature</a> <br> <br>
-					<a href="">Plant</a> <br> <br>
-					<a href="">Religion</a> <br> <br>
-					
+					<a href="#" class="btn" type="button" onclick="btv0()">Food</a>
+					<a href="#" class="btn" type="button" onclick="btv1()">Animal</a>
+					<a href="#" class="btn" type="button" onclick="btv2()">Nature</a>
+					<a href="#" class="btn" type="button" onclick="btv3()">School</a>
 				</div>
 			</div>
 		</div>
@@ -98,19 +93,28 @@
 			<div class="col-md-1">
         	</div>
         	<div class="col-md-7">
-				<h3 id="voca"></h3>
+
+				<h2 id="voca"></h2>   <!-- ten tu moi-->				
 				<img id="image" src="" alt="" class="img-circle" width= 200 height=200>
-				<br>
-				<h5 id="pronounce"><b></b></h5> 
+				<br>	<!-- anh minh hoa-->	
+				<h4 id="pronounce"><b></b></h4> 	<!-- phat am + nghia -->	
 				
-				<b>Ví dụ:</b>
-				<p id="example"></p>
-					
-				<button type="button" class="btn btn-success" onclick="render1()"> Next </button>
-				<br>
-				<br>
+				<h4><b>Ví dụ:</b> </h4>
+				<h4 id="example0"></h4>
+				<i><h5 id="trans0"></h5></i>
+				<h4 id="example1"></h4>
+				<i><h5 id="trans1"></h5></i>
+				<h4 id="example2"></h4>
+				<i><h5 id="trans2"></h5></i>
+				<br><br>
+				<div>
+					<button type="button" class="btn btn-success" onclick="render1()"><h4> Next</h4> </button>
+					<br><br>
+				</div>
 			</div>
+		
 			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<br><br>
 				<h3 id="end"></h3>
 			</div>
 			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
@@ -120,10 +124,13 @@
 		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
 			
 		</div>
+	
 	</div>
 	<div class="row">
 		<footer class="text-center">
+		<br>
 			@MIDF
+		<br>
 		</footer>
 	</div>
 					
